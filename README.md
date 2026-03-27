@@ -11,7 +11,7 @@ Software Engineering Project
 3. [Hamit Sula] - GitHub: [hamitsula] - Email: [hsula25@epoka.edu.al]
 4. [Lorjana Kokonozi] - GitHub: [lkokonozi25-sketch] - Email: [lkokonozi25@epoka.edu.al]
 # Project Details
-## Project Title: [Project Title]
+## Project Title: [YouthALB]
 ## Problem Statement:
 [People find it difficult to discover and reserve nightlife events and other activities because information is spread across multiple platforms and not centralized.]
 ## Proposed Solution:
