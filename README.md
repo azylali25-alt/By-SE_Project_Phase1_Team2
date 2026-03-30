@@ -36,7 +36,7 @@ Review code and system design
 Coordinate team communication]
 [Responsibilities]
 ## Team Members: 5
-1. [Ekela Jaupaj]   - [Frontend Developer
+1. [Eklea Jaupaj]   - [Frontend Developer
 Design user interface (UI)
 Implement event browsing and filtering features
 Ensure responsive design]
