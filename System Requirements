@@ -64,7 +64,7 @@ Password meets security rules
 Account is successfully created
 User receives confirmation
 2. User Login
-User enters correct credentials
+User enters correct  credentials
 System authenticates user
 User is redirected to dashboard
 Error shown for invalid login
