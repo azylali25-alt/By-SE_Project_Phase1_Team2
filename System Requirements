@@ -1,5 +1,169 @@
 Chosen Development Model: Agile (Scrum)
-The Agile model was chosen because it allows flexibility and continuous improvement during development. Since the YouthALB platform involves multiple features (user accounts, event browsing, reservations, admin management), Agile helps the team:
+The Agile model was chosen because it allows flexibility and continuous improvement during development. Since the YouthALB platform involves multiple features (user accounts, event browsing, reservations, admin management).
+Agile helps the team:
 Adapt to changing requirements
 Deliver features in small, manageable iterations (sprints)
 Continuously test and improve the system.
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+User Requirements:
+1. End Users (Customers):
+People looking for nightlife events
+Want an easy way to browse, filter, and reserve tickets
+Interested in quick and reliable booking
+2. Administrators:
+Manage events (create, update, delete)
+Control ticket availability and event details
+Ensure accurate information is displayed
+3. Development Team:
+Build and maintain the system
+Ensure performance, security, and usability
+Fix bugs and implement improvements
+4. Project Leader:
+Coordinates tasks and deadlines
+Ensures team collaboration
+Oversees progress and quality
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+User Stories (WHAT they need and WHY):
+As a user, I want to register an account so that I can access the platform features.
+As a user, I want to log in securely so that I can manage my reservations.
+As a user, I want to browse events so that I can discover nightlife activities.
+As a user, I want to filter events by location, date, and category so that I can find relevant events quickly.
+As a user, I want to view event details so that I can decide whether to attend.
+As a user, I want to reserve tickets so that I can secure my spot.
+As a user, I want to receive a confirmation message so that I know my reservation is successful.
+As a user, I want to see my reservation history so that I can track my bookings.
+As a user, I want to cancel a reservation so that I can manage my plans.
+As an admin, I want to create events so that users can see available activities.
+
+Functional Requirements:
+The system shall allow user registration.
+The system shall allow user login and logout.
+The system shall validate user credentials.
+The system shall allow password reset.
+The system shall display available events.
+The system shall allow filtering by location.
+The system shall allow filtering by date.
+The system shall allow filtering by category.
+The system shall display detailed event information.
+The system shall allow ticket reservation.
+The system shall check ticket availability before reservation.
+The system shall generate a unique ticket number.
+The system shall send reservation confirmation.
+The system shall store user reservation history.
+The system shall allow users to cancel reservations.
+The system shall update available tickets after reservation/cancellation.
+The system shall allow admins to create events.
+The system shall allow admins to edit events.
+The system shall allow admins to delete events.
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Acceptance Criteria 
+1. User Registration
+User enters all required fields
+Email format is validated
+Password meets security rules
+Account is successfully created
+User receives confirmation
+2. User Login
+User enters correct credentials
+System authenticates user
+User is redirected to dashboard
+Error shown for invalid login
+3. Event Filtering
+User selects filter options
+System displays matching events
+Results update correctly
+4. Ticket Reservation
+User selects event and ticket quantity
+System checks availability
+Reservation is completed successfully
+Ticket number is generated
+5. Admin Event Management
+Admin creates/updates/deletes event
+System saves changes
+Changes are visible to users
+ _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Non-Functional Requirements 
+The system should load pages within 2 seconds.
+The system should handle multiple users simultaneously.
+The system should ensure data security.
+The system should encrypt user passwords.
+The system should be available 24/7.
+The system should be user-friendly.
+The system should support mobile devices (responsive design).
+The system should ensure data accuracy.
+The system should prevent unauthorized access.
+The system should log errors and exceptions.
+The system should be scalable.
+The system should support future updates.
+The system should have backup and recovery mechanisms.
+The system should comply with privacy standards.
+The system should provide fast search results.
+The system should ensure high reliability.
+The system should minimize downtime.
+The system should support different browsers.
+The system should have clear navigation.
+The system should provide meaningful error messages.
+
+Acceptance Criteria 
+1. Performance (Page Load Time)
+Pages load within 2 seconds
+Tested under normal and peak conditions
+2. Security
+Passwords are encrypted
+Unauthorized access is blocked
+Secure login is implemented
+3. Availability
+System uptime is at least 99%
+Downtime is minimal and scheduled
+4. Usability
+Users can navigate easily
+Interface is clear and responsive
+No confusion during booking process
+5. Scalability
+System supports increasing number of users
+Performance does not degrade significantly
+ _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Application Specifications:
+a. Architecture
+The system uses a three-tier architecture:
+Frontend: User interface (event browsing, booking)
+Backend: Handles logic (authentication, reservations)
+Database: Stores users, events, and tickets
+Flow: User → Frontend → Backend → Database → Response to user
+ _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Database Model
+Main tables:
+Users (user_id, name, email, password, role)
+Events (event_id, title, location, date, capacity)
+Reservations (reservation_id, user_id, event_id, ticket_number)
+
+Relationships:
+One user → many reservations
+One event → many reservations
+
+Constraints:
+Email and ticket number are unique
+Reservations must link to valid users and events
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+Technologies Used
+Frontend: HTML, CSS, JavaScript (responsive UI)
+Backend: Node.js (handles logic)
+Database: MySQL (data storage)
+Version Control: GitHub
+
+User Interface Design
+Main pages:
+Login/Register
+Event browsing (with filters)
+Event details + booking
+User profile (history)
+Admin dashboard (manage events)
+Design is simple, responsive, and easy to use.
+
+Security Measures
+User authentication (login system)
+Password encryption (hashed passwords)
+Role-based access (admin vs user)
+Input validation
+HTTPS for secure communication
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
